@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header h1 {
+	font-size: 6rem;
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	translate: -50% -50%;
+}
+
+header img {
+	width: 100vw;
+	height: 100vh
+}
