@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root {
+	--header-font: "Great Vibes";
+}
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
 header h1 {
-	font-size: 6rem;
+	color: #8458B3;
+	font-size: 8rem;
 	position: absolute;
 	top: 50vh;
 	left: 50vw;
 	translate: -50% -50%;
+	font-family: var(--header-font);
 }
 
 header img {
