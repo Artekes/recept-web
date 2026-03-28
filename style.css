@@ -2,6 +2,11 @@
 
 :root {
 	--header-font: "Great Vibes";
+	--ice-cold: #a0d2eb; /* 15% */
+	--freeze-purple: #e5eaf5; /* 10% */
+	--medium-purple: #d0bdf4; /* 10% */
+	--purple-plain: #8458b3; /* 10% */
+	--heavy-purple: #494D5f; /* 55% */
 }
 
 * {
@@ -10,7 +15,7 @@
 }
 
 header h1 {
-	color: #8458B3;
+	color: var(--purple-plain);
 	font-size: 8rem;
 	position: absolute;
 	top: 50vh;
