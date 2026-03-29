@@ -47,6 +47,7 @@ section {
 	box-shadow: 5px 3px 20px var(--purple-plain);
 	padding: 10px;
 	border-radius: 25px;
+	position: relative;
 }
 
 section img {
@@ -65,6 +66,7 @@ section img {
 	font-family: var(--description-font);
 	font-size: 1.25rem;
 	color: var(--ice-cold);
+	font-weight: 600;
 }
 
 section button {
@@ -73,7 +75,20 @@ section button {
 	border-radius: 25px;
 	border: none;
 	background-color: var(--medium-purple);
-} 
+	color: var(--purple-plain);
+	font-weight: 750;
+}
+
+.raiting, .time {
+	position: absolute;
+	right: 66.55px;
+	bottom: 19.6px;
+	color: var(--freeze-purple);
+}
+
+.time {
+	right: 10px;
+}
 
 section div {
 	margin-top: 10px;
