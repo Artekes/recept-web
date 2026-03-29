@@ -38,7 +38,11 @@ body {
 }
 
 main {
-	margin: 1em;
+	margin: 1em auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3em;
+	width: 80%;
 }
 
 section {
