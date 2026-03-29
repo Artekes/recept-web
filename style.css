@@ -48,7 +48,7 @@ main {
 section {
 	width: 300px;
 	background-color: var(--purple-plain);
-	box-shadow: 5px 3px 20px var(--purple-plain);
+	box-shadow: 0px 0px 10px 5px var(--purple-plain), inset 5px 5px 20px -15px var(--freeze-purple);
 	padding: 10px;
 	border-radius: 25px;
 	position: relative;
