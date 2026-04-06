@@ -29,6 +29,23 @@
 		</section>
 		-->
 	</main>
+
+	<div id="form">
+		<label for="imageURL">Катринка силка</label>
+		<input type="text" id="imageURL">
+		<label for="tittleStr">Назва рецепту</label>
+		<input type="text" id="tittleStr">
+		<label for="descriptionStr">Короткий попис рецепту</label>
+		<input type="text" id="descriptionStr">
+		<label for="targetURL">Назва файлу з рецептом</label>
+		<input type="text" id="targetURL">
+		<label for="raitingInt">Персональна оцінка</label>
+		<input type="number" id="raitingInt">
+		<label for="timeInt">Потрібний час</label>
+		<input type="number" id="timeInt">
+		<button onclick="displayStringForRecept()">Відправити</button>
+		<span id="displayStringForRecept"></span>
+	</div>
 	<script src="script.js"></script>
 </body>
 </html>
