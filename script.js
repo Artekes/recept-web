@@ -1,12 +1,6 @@
 const main = document.getElementById(`main`);
-let localStorage = [{
-		imageURL: "https://picsum.photos/300/300",
-		titleStr: "Test Recept",
-		descriptionStr: "Just test recept",
-		targetURL: "",
-		raitingInt: 8,
-		timeInt: 5
-	}];
+const jsonString = "[{\"imageURL\": \"https://picsum.photos/300/300\", \"titleStr\": \"Test Recept\", \"descriptionStr\": \"Just test recept\", \"targetURL\": \"\", \"raitingInt\": 8, \"timeInt\": 5}]";
+let localStorage = JSON.parse(jsonString);
 
 function addRecept(imageURL, titleStr, descriptionStr, targetURL, raitingInt, timeInt) { // function to add recepts to localStorage
 	let recipeInfo = {
@@ -38,3 +32,19 @@ function loadRecepts() {
 }
 
 setInterval(loadRecepts, 1000);
+
+function displayJSONForRecept() {
+	const imageURL = document.getElementById(`imageURL`).value;
+	const tittleStr = document.getElementById(`tittleStr`).value;
+	const descriptionStr = document.getElementById(`descriptionStr`).value;
+	const targetURL = document.getElementById(`targetURL`).value;
+	const raitingInt = document.getElementById(`raitingInt`).value;
+	const timeInt = document.getElementById(`timeInt`).value;
+	const displayReceptJSON = document.getElementById(`displayReceptJSON`);
+
+	if (imageURL == "" || tittleStr == "" || descriptionStr == "" || targetURL == "" || raitingInt == "" || timeInt == "") return;
+
+	let json = jsonString.slice(0, -1);
+	json += `, {\"imageURL\": \"${imageURL}\", \"tittleStr\": \"${tittleStr}\", \"descriptionStr\": \"${descriptionStr}\", \"targetURL\": \"${targetURL}\", \"raitingInt\": \"${raitingInt}\", \"timeInt\": \"${timeInt}\"}]`;
+	displayReceptJSON.innerHTML = json;
+}
