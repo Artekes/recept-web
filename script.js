@@ -1,5 +1,5 @@
 const main = document.getElementById(`main`);
-const jsonString = "[{\"imageURL\": \"https://picsum.photos/300/300\", \"titleStr\": \"Test Recept\", \"descriptionStr\": \"Just test recept\", \"targetURL\": \"\", \"raitingInt\": 8, \"timeInt\": 5}]";
+const jsonString = '[{\"imageURL\": \"https://picsum.photos/300/300\", \"titleStr\": \"Test Recept\", \"descriptionStr\": \"Just test recept\", \"targetURL\": \"\", \"raitingInt\": 8, \"timeInt\": 5}]';
 let localStorage = JSON.parse(jsonString);
 
 function addRecept(imageURL, titleStr, descriptionStr, targetURL, raitingInt, timeInt) { // function to add recepts to localStorage
